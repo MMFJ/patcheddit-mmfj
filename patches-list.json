@@ -746,6 +746,46 @@
     },
     {
       "name": "Spoof client",
+      "description": "Allows modifying Slide's client ID, redirect URI and user agent in settings. Patch options will modify default values.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "me.edgan.redditslide.mmfj": null
+      },
+      "options": [
+        {
+          "key": "client-id",
+          "title": "OAuth client ID",
+          "description": "The Reddit OAuth client ID. Refer to Patcheddit documentation for more information on what to put here.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": null,
+          "values": null
+        },
+        {
+          "key": "redirect-uri",
+          "title": "Redirect URI",
+          "description": "The Reddit OAuth redirect URI. Refer to Patcheddit documentation for more information on what to put here. Default value is RedReader's redirect URI.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "redreader://rr_oauth_redir",
+          "values": null
+        },
+        {
+          "key": "user-agent",
+          "title": "User agent",
+          "description": "The app's user agent. Refer to Patcheddit documentation for more information on what to put here. Default value is RedReader's user agent.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "org.quantumbadger.redreader/1.25.1",
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Spoof client",
       "description": "Restores functionality of the app by using custom client ID.",
       "use": true,
       "dependencies": [
