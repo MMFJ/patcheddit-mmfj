@@ -6,7 +6,7 @@ import app.morphe.patches.all.misc.extension.ExtensionHook
 internal val initHook = ExtensionHook(
     Fingerprint(
         custom = { method, classDef ->
-            classDef.type == "Lme/edgan/redditslide/Reddit;" && method.name == "onCreate"
+            classDef.type == "Lme/edgan/redditslide/Reddit/MMFJ;" && method.name == "onCreate"
         }
     )
 )
