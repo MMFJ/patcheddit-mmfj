@@ -712,7 +712,8 @@
         "BytecodePatch"
       ],
       "compatiblePackages": {
-        "me.edgan.redditslide": null
+        "me.edgan.redditslide": null,
+        "me.edgan.redditslide.mmfj": null
       },
       "options": [
         {
