@@ -33,10 +33,10 @@ internal val getDefaultClientIdFingerprint = Fingerprint(
 
 internal fun userAgentFingerprints(versionName: String) = listOf(
     Fingerprint(
-        strings = listOf("me.edgan.redditslide/$versionName")
+        strings = listOf("me.edgan.redditslide.mmfj/$versionName")
     ),
     Fingerprint(
-        strings = listOf("android:me.edgan.RedditSlide:v$versionName")
+        strings = listOf("android:me.edgan.RedditSlide.mmfj:v$versionName")
     )
 )
 
